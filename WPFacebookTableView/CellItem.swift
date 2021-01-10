@@ -30,7 +30,7 @@ extension CellItem {
 
         for _ in 0 ..< 19 {
             
-            let isMe = Int.random(in: 0 ..< 100) % 2 == 0
+            let isMe = Int.random(in: 0 ..< 100) % 3 < 2
             let text = String.random
             let bound = CGSize(width: width * 2 / 3, height: CGFloat(MAXFLOAT))
             let size = text.strSize(with: bound, font: .systemFont(ofSize: 17), miniHeight: true)
